@@ -1,5 +1,5 @@
 # Site settings
-title: 陈立憨（派大星）的博客
+title: 陈立憨的博客
 SEOTitle: 陈立憨（派大星）的博客 | LihanChen Blog
 header-img: img/home-bg.jpg
 email: lihanchen2004@163.com
@@ -56,7 +56,7 @@ kramdown:
       start_line: 1
 
 # Disqus settings
-disqus_username: lihanchen2004
+disqus_username: lihanchen-blog
 
 # Netease settings
 netease_comment: false
