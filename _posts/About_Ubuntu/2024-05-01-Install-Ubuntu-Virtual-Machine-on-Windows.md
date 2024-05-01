@@ -39,7 +39,7 @@ JU090-6039P-08409-8J0QH-2YR7F
 
     密码不建议复杂，可设为一个空格，每次执行 `sudo` 命令时都将输入密码
 
-    ![image.png](/img/in-post/About_Ubuntu/Install-Ubuntu-Virtual-Machine-on-Windows/image 1.png)
+    ![image.png](/img/in-post/About_Ubuntu/Install-Ubuntu-Virtual-Machine-on-Windows/image1.png)
 
 3. 设置存储空间
 
