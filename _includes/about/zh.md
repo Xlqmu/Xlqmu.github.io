@@ -1,4 +1,4 @@
-HiHi，我是陈力瀚（又名陈立憨、派大星、大郎、陈导），一个破拍照的电子与计算机工程在读学生，在 [SMBU](https://www.smbu.edu.cn/) [Porlarbear](https://g.h5gdsvip.com/p/lftipqki) 战队算法组中野蛮生长的 [RMer](https://www.robomaster.com/)。
+HiHi，我是陈力瀚（又名陈立憨、派大星、大郎、陈导），一个破拍照的电子与计算机工程在读学生，在 [SMBU](https://www.smbu.edu.cn/) [Polarbear](https://g.h5gdsvip.com/p/lftipqki) 战队算法组中野蛮生长的 [RMer](https://www.robomaster.com/)。
 
 不是大佬，只是个 Ctrl_CV 的调包侠。目前比较擅长导航和决策树，有以下开源项目：
 

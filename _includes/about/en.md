@@ -1,4 +1,4 @@
-HiHi, I'm Chen Lihan (also known as Chen Lihan, Paida Xing, Dalang, Chen Dao), a broken photographer, an undergraduate student majoring in electronics and computer engineering, and a [RMer](https://www.robomaster.com/) who is barbarically growing in the algorithm team of [SMBU](https://www.smbu.edu.cn/) [Porlarbear](https://g.h5gdsvip.com/p/lftipqki).
+HiHi, I'm Chen Lihan (also known as Chen Lihan, Paida Xing, Dalang, Chen Dao), a broken photographer, an undergraduate student majoring in electronics and computer engineering, and a [RMer](https://www.robomaster.com/) who is barbarically growing in the algorithm team of [SMBU](https://www.smbu.edu.cn/) [Polarbear](https://g.h5gdsvip.com/p/lftipqki).
 
 Not a big shot, just a Ctrl_CV package thief. Currently, I'm relatively good at navigation and decision trees, with the following open-source projects:
 
