@@ -14,10 +14,10 @@ tags:
 
 使用 VMware 安装（注意要安装 **Pro** 版！网上大把秘钥）
 
-[](./img/VMware-workstation-full-17.0.0-20800274.exe)
+[](/img/in-post/About_Ubuntu/Install-Ubuntu-Virtual-Machine-on-Windows/VMware-workstation-full-17.0.0-20800274.exe)
 
 
-```C
+```
 JU090-6039P-08409-8J0QH-2YR7F
 ```
 
@@ -31,29 +31,29 @@ JU090-6039P-08409-8J0QH-2YR7F
 
 1. 选择你的刚才下载的 .iso 文件
 
-    ![image.png](./img/image.png)
+    ![image.png](/img/in-post/About_Ubuntu/Install-Ubuntu-Virtual-Machine-on-Windows/image.png)
 
-1. 设置用户名
+2. 设置用户名
 
     **请不要使用任何中文 / Emoji，请养成习惯**
 
     密码不建议复杂，可设为一个空格，每次执行 `sudo` 命令时都将输入密码
 
-    ![image.png](./img/image 1.png)
+    ![image.png](/img/in-post/About_Ubuntu/Install-Ubuntu-Virtual-Machine-on-Windows/image 1.png)
 
-1. 设置存储空间
+3. 设置存储空间
 
     **存储空间建议：**
 
-        1. 只是玩一玩linux系统，则分配30GB
+    1. 只是玩一玩linux系统，则分配30GB
 
-        2. 软件开发，50GB
+    2. 软件开发，50GB
 
-        3. 学习ROS，80GB以上
+    3. 学习ROS，80GB以上
 
-        4. 深度学习、机器学习，100GB以上
+    4. 深度学习、机器学习，100GB以上
 
-    ![image.png](./img/image 2.png)
+    ![image.png](/img/in-post/About_Ubuntu/Install-Ubuntu-Virtual-Machine-on-Windows/image2.png)
 
 # 四. 在虚拟机中安装 Ubuntu22.04
 
@@ -63,31 +63,31 @@ JU090-6039P-08409-8J0QH-2YR7F
 
     否则将导致文件夹中出现中文名，这在未来开发中可能导致未知的错误
 
-    ![image.png](./img/image3.png)
+    ![image.png](/img/in-post/About_Ubuntu/Install-Ubuntu-Virtual-Machine-on-Windows/image3.png)
 
-1. Update and Software
+2. Update and Software
 
     默认即可
 
-1. Installation Type
+3. Installation Type
 
     默认即可：Erase Disk and Install Ubuntu
 
-1. 选择时区
+4. 选择时区
 
-    ![image.png](./img/image4.png)
+    ![image.png](/img/in-post/About_Ubuntu/Install-Ubuntu-Virtual-Machine-on-Windows/image4.png)
 
-1. 设置用户名与密码
+5. 设置用户名与密码
 
     请不要使用任何中文或 Emoji，请养成习惯 
 
     密码不建议复杂，可设为一个空格，每次执行 `sudo` 命令时都将输入密码
 
-    ![image.png](./img/image5.png)
+    ![image.png](/img/in-post/About_Ubuntu/Install-Ubuntu-Virtual-Machine-on-Windows/image5.png)
 
-1. 等待约20min后，安装成功
+6. 等待约20min后，安装成功
 
-    ![image.png](./img/image6.png)
+    ![image.png](/img/in-post/About_Ubuntu/Install-Ubuntu-Virtual-Machine-on-Windows/image6.png)
 
 # 设置共享文件夹（选修）
 
