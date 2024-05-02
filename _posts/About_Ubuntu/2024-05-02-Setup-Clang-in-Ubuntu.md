@@ -94,8 +94,6 @@ sudo apt-get install clang-format
 
     ![image.png](/img/in-post/About_Ubuntu/Setup-Clang-in-Ubuntu/image7.png)
 
-    ![image.png](/img/in-post/About_Ubuntu/Setup-Clang-in-Ubuntu/image8.png)
-
 ### 3.3 添加 .vscode/launch.json 文件用于 DEBUG（选修）
 
 在当前工作目录中新建 .vscode 文件夹，再在文件夹中新建 launch.json 文件，将以下内容粘贴到文件中
@@ -165,7 +163,7 @@ sudo apt-get install clang-format
 
 - 参考文章
 
-    [How to install Clang 17 or 16 in Ubuntu 22.04 | 20.04 | UbuntuHandbook](https://ubuntuhandbook.org/index.php/2023/09/how-to-install-clang-17-or-16-in-ubuntu-22-04-20-04/)
+    [How to install clang 17 or 16 in Ubuntu](https://ubuntuhandbook.org/index.php/2023/09/how-to-install-clang-17-or-16-in-ubuntu-22-04-20-04/)
 
 
     [[VSCode插件推荐] Code Runner: 代码一键运行，支持超过40种语言](https://zhuanlan.zhihu.com/p/54861567)
