@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Ubuntu中安装Todesk"
+title:      "Ubuntu 中安装 Todesk"
 subtitle:   "Todesk Installation in Ubuntu"
 date:       2024-05-02 14:55:00
 author:     "陈立憨"
