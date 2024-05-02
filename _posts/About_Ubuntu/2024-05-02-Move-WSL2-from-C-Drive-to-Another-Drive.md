@@ -5,12 +5,13 @@ subtitle:   "Move WSL2 from C Drive to Another Drive"
 date:       2024-05-02 13:45:00
 author:     "陈立憨"
 tags:
-- Ubuntu
+    - Ubuntu
+    - WSL2
 ---
 
 > 建议使用 Flowus 阅读本文（若未失效），以获得最佳阅读体验：[将 WSL2 从 C 盘迁移至其他盘](https://flowus.cn/lihanchen/share/df854215-9f18-40b9-a361-1d0d7dd4844e?code=4PP1RS)
 
-# Step1 关闭要迁移的虚拟机
+## Step1 关闭要迁移的虚拟机
 
 查看虚拟机状态，并关闭要迁移的虚拟机
 
@@ -26,7 +27,7 @@ wsl -l -v
 wsl --shutdown Ubuntu-22.04
 ```
 
-# Step2 迁移WSL2
+## Step2 迁移WSL2
 
 首先在对应的盘创建好新的WLS2的目录： `D:\WSL2Ubuntu22.04LTS`
 

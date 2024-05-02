@@ -6,6 +6,7 @@ date:       2024-05-02 13:30:00
 author:     "陈立憨"
 tags:
     - Ubuntu
+    - WSL2
 ---
 
 > 建议使用 Flowus 阅读本文（若未失效），以获得最佳阅读体验：[Win11 使用 WSL2 安装 Ubuntu22.04](https://flowus.cn/lihanchen/share/8f7b8faf-da59-4df9-8013-dff334c4038b?code=4PP1RS)
@@ -15,18 +16,18 @@ tags:
 官方文档：[安装 WSL](https://learn.microsoft.com/zh-cn/windows/wsl/install)
 
 
-# 一. WSL2 安装教程
+## 一. WSL2 安装教程
 
 [Win11 WSL2 安装教程](https://lihanchen2004.github.io/2024/05/02/Win11-WSL2-Installation-Tutorial/)
 
-# 二. 将 WSL2 从 C 盘迁移至其他盘
+## 二. 将 WSL2 从 C 盘迁移至其他盘
 
 [将 WSL2 从 C 盘迁移至其他盘](https://lihanchen2004.github.io/2024/05/02/Move-WSL2-from-C-Drive-to-Another-Drive/)
 
 
-# 三. 搭建舒适的开发环境
+## 三. 搭建舒适的开发环境
 
-## 3.1 VScode 插件
+### 3.1 VScode 插件
 
 WSL扩展允许你在Windows上使用VS Code来构建运行在Windows子系统(WSL)上的Linux应用程序。在使用基于linux的工具、运行时和实用程序进行开发时，您可以获得Windows的所有生产力。
 
@@ -40,7 +41,7 @@ WSL扩展允许你在WSL中使用VS Code，就像你在Windows中使用一样。
 
     ![image2.png](/img/in-post/About_Ubuntu/Install-Ubuntu-22.04-on-Win11-using-WSL2/image2.png)
 
-## 3.2 安装 WSLg （在 WSL2 运行 Linux GUI 应用）
+### 3.2 安装 WSLg （在 WSL2 运行 Linux GUI 应用）
 
 [learn.microsoft.com](https://learn.microsoft.com/zh-cn/windows/wsl/tutorials/gui-apps)
 
@@ -61,7 +62,7 @@ wsl --update
 wsl --shutdown
 ```
 
-## 3.3 一键安装ROS、Docker、换源等
+### 3.3 一键安装ROS、Docker、换源等
 
 ```Shell
 wget http://fishros.com/install -O fishros && . fishros
@@ -69,13 +70,13 @@ wget http://fishros.com/install -O fishros && . fishros
 
 然后就可以愉快地开始 Windows 下的 Ubuntu 开发工作啦
 
-# 四. 番外（选修篇）
+## 四. 番外（选修篇）
 
-## 4.1 在 WSL2 下连接 Livox 雷达
+### 4.1 在 WSL2 下连接 Livox 雷达
 
 [在 WSL2 下连接 Livox 雷达](https://lihanchen2004.github.io/2024/05/02/Connect-Livox-Lidar-under-WSL2/)
 
-## 4.2 安装 gnome-terminal
+### 4.2 安装 gnome-terminal
 
 在 **WSL2** 中输入命令：
 

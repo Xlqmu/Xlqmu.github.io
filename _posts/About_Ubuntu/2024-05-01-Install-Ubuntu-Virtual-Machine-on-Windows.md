@@ -10,7 +10,7 @@ tags:
 
 > 本文链接中包含 VMware Pro 安装包附件。建议使用 Flowus 阅读本文（若未失效），以获得最佳阅读体验：[在 Windows 中安装 Ubuntu 虚拟机](https://flowus.cn/lihanchen/share/80e13e07-81d7-4e30-8a3c-dd88b98e9321?code=4PP1RS)
 
-# 一. 安装 VMware Pro
+## 一. 安装 VMware Pro
 
 使用 VMware 安装（注意要安装 **Pro** 版！网上大把秘钥）
 
@@ -18,12 +18,12 @@ tags:
 JU090-6039P-08409-8J0QH-2YR7F
 ```
 
-# 二. 下载Ubuntu 22.04.2 LTS
+## 二. 下载Ubuntu 22.04.2 LTS
 
 [cn.ubuntu.com](https://cn.ubuntu.com/download/desktop)
 
 
-# 三. 配置虚拟机
+## 三. 配置虚拟机
 
 1. 选择你的刚才下载的 .iso 文件
 
@@ -51,7 +51,7 @@ JU090-6039P-08409-8J0QH-2YR7F
 
     ![image.png](/img/in-post/About_Ubuntu/Install-Ubuntu-Virtual-Machine-on-Windows/image2.png)
 
-# 四. 在虚拟机中安装 Ubuntu22.04
+## 四. 在虚拟机中安装 Ubuntu22.04
 
 1. 设置语言
 
@@ -85,7 +85,7 @@ JU090-6039P-08409-8J0QH-2YR7F
 
     ![image.png](/img/in-post/About_Ubuntu/Install-Ubuntu-Virtual-Machine-on-Windows/image6.png)
 
-# 设置共享文件夹（选修）
+## 设置共享文件夹（选修）
 
 实现与Windows系统共用文件
 
