@@ -8,9 +8,9 @@ tags:
     - Ubuntu
 ---
 
-> 建议使用 Flowus 阅读本文（若未失效），以获得最佳阅读体验：[在 Windows 中安装 Ubuntu 虚拟机](https://flowus.cn/lihanchen/80e13e07-81d7-4e30-8a3c-dd88b98e9321)
+> 建议使用 Flowus 阅读本文（若未失效），以获得最佳阅读体验：[在 minipc 中安装 Ubuntu 系统](https://flowus.cn/lihanchen/share/14e45e2b-c824-4ef1-a689-a373de834cde?code=4PP1RS)
 
-**原文链接：[在minipc中安装Ubuntu系统](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)**
+**官方文档链接：[在minipc中安装Ubuntu系统](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)**
 
 ## 1. 概述
 
