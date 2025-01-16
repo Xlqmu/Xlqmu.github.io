@@ -29,6 +29,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Remove invalid welcome post
+        run: |
+          rm -f vendor/bundle/ruby/3.0.0/gems/jekyll-4.3.4/lib/site_template/_posts/0000-00-00-welcome-to-jekyll.markdown.erb
+
       # Setup Ruby (Self-hosted runner workaround)
       # This step installs Ruby 3.1.4 using ruby-build for self-hosted runners
       - name: Setup Ruby
