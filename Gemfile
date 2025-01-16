@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 gem 'jekyll-paginate'
-
+gem 'github-pages', '>= 104'
 gem "jekyll", "~> 4.3.4"
 gem "rake"
 gem "csv"
