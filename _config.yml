@@ -1,11 +1,11 @@
 # Site settings
-title: 陈立憨的博客
-SEOTitle: 陈立憨（派大星）的博客 | LihanChen Blog
+title: Xlqmu的博客
+SEOTitle: Xlqmu（的博客 | Xlqmu Blog
 header-img: img/home-bg.jpg
-email: lihanchen2004@163.com
-description: "这里是 @陈立憨 的个人博客，与你一起发现更大的世界 | 就一破拍照的 RMer"
-keyword: "陈立憨, LihanChen, Robomaster, 博客, 个人网站, 哨兵, 导航, 决策, Naviation2, BehaviorTree, "
-url: "https://lihanchen2004.github.io" # your host, for absolute URL
+email: Xlqmu@qq.com
+description: "这里是 @Xlqmu 的个人博客，与你一起发现更大的世界 | 就一破 RMer"
+keyword: "Xlqmu, Robomaster, 博客, 个人网站, 哨兵, 导航, 决策, Naviation2, BehaviorTree, "
+url: "https://Xlqmu.github.io" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -13,7 +13,7 @@ future: true
 
 # SNS settings
 RSS: false
-github_username: LihanChen2004
+github_username: Xlqmu
 #weibo_username: huxpro
 #zhihu_username: huxpro
 
@@ -71,8 +71,8 @@ netease_comment: false
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "就一破拍照的 RMer <br> SMBU Polarbear @ 陈立憨"
-sidebar-avatar: https://github.com/LihanChen2004.png # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "就一破 RMer <br> Aurora @ Xlqmu"
+sidebar-avatar: https://github.com/Xlqmu.png # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true # whether or not using Feature-Tags
