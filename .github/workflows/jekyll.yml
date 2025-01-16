@@ -32,12 +32,15 @@ jobs:
       # Setup Ruby (Self-hosted runner workaround)
       # This step installs Ruby 3.1.4 using ruby-build for self-hosted runners
       - name: Setup Ruby
-        run: |
-          curl -fsSL https://github.com/rbenv/ruby-build/archive/master.tar.gz | tar -xz
-          export PATH="$HOME/.rbenv/bin:$PATH"
-          eval "$(rbenv init -)"
-          rbenv install 3.1.4
-          rbenv global 3.1.4
+	run: |
+	  sudo apt-get update
+	  sudo apt-get install -y rbenv
+	  curl -fsSL https://github.com/rbenv/ruby-build/archive/master.tar.gz | tar -xz	    
+	  export PATH="$HOME/.rbenv/bin:$PATH"
+	  eval "$(rbenv init -)"
+	  rbenv install 3.1.4
+	  rbenv global 3.1.4
+
 
       # Install Gems
       - name: Install Gems
