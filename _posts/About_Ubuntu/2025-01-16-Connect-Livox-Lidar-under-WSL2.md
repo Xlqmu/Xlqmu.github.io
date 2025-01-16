@@ -2,8 +2,8 @@
 layout:     post
 title:      "在 WSL2 下连接 Livox 雷达"
 subtitle:   "Connect Livox Lidar under WSL2"
-date:       2024-05-02 13:55:00
-author:     "陈立憨"
+date:       2025-01-16 16:08:00
+author:     "Xlqmu"
 tags:
     - Ubuntu
     - WSL2
@@ -83,116 +83,121 @@ wsl --shutdown
 这里以 mid360 为例
 
 1. 安装 [Livox SDK2](https://github.com/Livox-SDK/Livox-SDK2)
+   
+   ```Shell
+   sudo apt install cmake
+   ```
+   
+   ```Shell
+   git clone https://github.com/Livox-SDK/Livox-SDK2.git
+   cd ./Livox-SDK2/
+   mkdir build
+   cd build
+   cmake .. && make -j
+   sudo make install
+   ```
 
-    ```Shell
-    sudo apt install cmake
-    ```
-
-    ```Shell
-    git clone https://github.com/Livox-SDK/Livox-SDK2.git
-    cd ./Livox-SDK2/
-    mkdir build
-    cd build
-    cmake .. && make -j
-    sudo make install
-    ```
-
-1. 安装 [Livox ROS Driver 2](https://github.com/Livox-SDK/livox_ros_driver2)
-
-    ```Shell
-    git clone https://github.com/Livox-SDK/livox_ros_driver2.git ws_livox/src/livox_ros_driver2
-    ```
-
-    ```Shell
-    cd ws_livox/src/livox_ros_driver2
-    source /opt/ros/humble/setup.sh
-    ./build.sh humble
-    ```
-
+2. 安装 [Livox ROS Driver 2](https://github.com/Livox-SDK/livox_ros_driver2)
+   
+   ```Shell
+   git clone https://github.com/Livox-SDK/livox_ros_driver2.git ws_livox/src/livox_ros_driver2
+   ```
+   
+   ```Shell
+   cd ws_livox/src/livox_ros_driver2
+   source /opt/ros/humble/setup.sh
+   ./build.sh humble
+   ```
+   
     为了便于启动驱动，可以设置每次启动终端时，自动 source livox_ros_driver2 的工作空间。**注意替换 `WHERE_YOU_GIT_CLONE`**
-
-    ```Shell
-    echo '## livox_ros_driver2' >> ~/.bashrc
-    echo 'source source /WHERE_YOU_GIT_CLONE/ws_livox/install/setup.bash' >> ~/.bashrc
-    ```
+   
+   ```Shell
+   echo '## livox_ros_driver2' >> ~/.bashrc
+   echo 'source source /WHERE_YOU_GIT_CLONE/ws_livox/install/setup.bash' >> ~/.bashrc
+   ```
 
 ### 2.2 在 livox_ros_driver2 中配置 config
 
 - **修改 `cmd_data_ip`, `push_msg_ip` 和 `imu_data_ip`** ，是你的 主机 ip 
-
+  
     修改为 `192.168.1.50`
 
 - **修改 `lidar_configs` 中的 `ip`**，是 livox 雷达的静态 ip
-
+  
     修改为 `192.168.1.1XX` （ `XX` 为 Livox 雷达机身上 `SN 码` 的最后两位数字)
 
 - 修改后如下：
-
-    ```json
-    {
-        "lidar_summary_info" : {
-        "lidar_type": 8
-        },
-        "MID360": {
-        "lidar_net_info" : {
-            "cmd_data_port": 56100,
-            "push_msg_port": 56200,
-            "point_data_port": 56300,
-            "imu_data_port": 56400,
-            "log_data_port": 56500
-        },
-        "host_net_info" : {
-            "cmd_data_ip" : "192.168.1.50",
-            "cmd_data_port": 56101,
-            "push_msg_ip": "192.168.1.50",
-            "push_msg_port": 56201,
-            "point_data_ip": "192.168.1.50",
-            "point_data_port": 56301,
-            "imu_data_ip" : "192.168.1.50",
-            "imu_data_port": 56401,
-            "log_data_ip" : "",
-            "log_data_port": 56501
-        }
-        },
-        "lidar_configs" : [
-        {
-            "ip" : "192.168.1.146",
-            "pcl_data_type" : 1,
-            "pattern_mode" : 0,
-            "extrinsic_parameter" : {
-            "roll": 0.0,
-            "pitch": 0.0,
-            "yaw": 0.0,
-            "x": 0,
-            "y": 0,
-            "z": 0
-            }
-        }
-        ]
-    }
-    ```
+  
+  ```json
+  {
+      "lidar_summary_info" : {
+      "lidar_type": 8
+      },
+      "MID360": {
+      "lidar_net_info" : {
+          "cmd_data_port": 56100,
+          "push_msg_port": 56200,
+          "point_data_port": 56300,
+          "imu_data_port": 56400,
+          "log_data_port": 56500
+      },
+      "host_net_info" : {
+          "cmd_data_ip" : "192.168.1.50",
+          "cmd_data_port": 56101,
+          "push_msg_ip": "192.168.1.50",
+          "push_msg_port": 56201,
+          "point_data_ip": "192.168.1.50",
+          "point_data_port": 56301,
+          "imu_data_ip" : "192.168.1.50",
+          "imu_data_port": 56401,
+          "log_data_ip" : "",
+          "log_data_port": 56501
+      }
+      },
+      "lidar_configs" : [
+      {
+          "ip" : "192.168.1.146",
+          "pcl_data_type" : 1,
+          "pattern_mode" : 0,
+          "extrinsic_parameter" : {
+          "roll": 0.0,
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "x": 0,
+          "y": 0,
+          "z": 0
+          }
+      }
+      ]
+  }
+  ```
 
 - 修改完成后不要忘记再次编译！
 
 ## 三. 测试
-1. 在 Windows cmd 中可以看到 livox 雷达的连接情况
 
+1. 在 Windows cmd 中可以看到 livox 雷达的连接情况
+   
     ![在 Windows cmd 中可以看到 livox 雷达的连接情况](/img/in-post/About_Ubuntu/Connect-Livox-Lidar-under-WSL2/image2.png)
 
 2. 进入 WSL2 ，可以看到相同的 Livox 雷达连接情况
-
+   
     ![进入 WSL2 ，可以看到相同的 Livox 雷达连接情况](/img/in-post/About_Ubuntu/Connect-Livox-Lidar-under-WSL2/image3.png)
 
 3. 输入下面这串命令，就可以看到 Livox 的点云啦
-
-    ```Shell
-    ros2 launch livox_ros_driver2 rviz_MID360_launch.py
-    ```
-
+   
+   ```Shell
+   ros2 launch livox_ros_driver2 rviz_MID360_launch.py
+   ```
+   
     ![运行成功，显示点云消息已发布](/img/in-post/About_Ubuntu/Connect-Livox-Lidar-under-WSL2/image4.png)
-
+   
     ![Rviz2 中查看点云](/img/in-post/About_Ubuntu/Connect-Livox-Lidar-under-WSL2/image5.png)
 
 ---
 
 - 参考文章：[WSL2 网络的最终解决方案](https://zhuanlan.zhihu.com/p/593263088)
+
+
+
+**本文fork自** [在 WSL2 下连接 Livox 雷达 - 陈立憨（派大星）的博客 | LihanChen Blog](https://lihanchen2004.github.io/2024/05/02/Connect-Livox-Lidar-under-WSL2/)

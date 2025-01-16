@@ -2,8 +2,8 @@
 layout:     post
 title:      "在 minipc 中安装 Ubuntu 系统"
 subtitle:   "Install Ubuntu System on Minipc"
-date:       2024-05-01 23:11:00
-author:     "陈立憨"
+date:       2025-01-16 23:16:03
+author:     "Xlqmu"
 tags:
     - Ubuntu
 ---
@@ -47,8 +47,8 @@ tags:
 ![image3.png](/img/in-post/About_Ubuntu/Install-Ubuntu-System-on-Minipc/img3.png)
 
 > **从 DVD 安装 Ubuntu** 
-也可以从 DVD
-按照这些指南在[Windows](https://ubuntu.com/tutorials/burn-a-dvd-on-windows)，[MacOS](https://ubuntu.com/tutorials/burn-a-dvd-on-macos)或Ubuntu上刻录[Ubuntu](https://ubuntu.com/tutorials/burn-a-dvd-on-ubuntu)安装DVD，然后在以下步骤的启动选项屏幕上选择CD驱动器而不是USB设备。
+> 也可以从 DVD
+> 按照这些指南在[Windows](https://ubuntu.com/tutorials/burn-a-dvd-on-windows)，[MacOS](https://ubuntu.com/tutorials/burn-a-dvd-on-macos)或Ubuntu上刻录[Ubuntu](https://ubuntu.com/tutorials/burn-a-dvd-on-ubuntu)安装DVD，然后在以下步骤的启动选项屏幕上选择CD驱动器而不是USB设备。
 
 ## 4. 从 U 盘启动
 
@@ -177,3 +177,7 @@ CLH：建议用**English**，防止中文路径招来虫子
 使用 [balenaEtcher](https://www.balena.io/etcher/) 配置启动U盘，导致你的U盘似乎“废了”，可通过以下步骤还原你的U盘
 
 [Etcher 似乎把我的 U 盘搞废了，该怎么办？](https://zhuanlan.zhihu.com/p/335090328)
+
+
+
+**本文fork自** [在 minipc 中安装 Ubuntu 系统 - 陈立憨（派大星）的博客 | LihanChen Blog](https://lihanchen2004.github.io/2024/05/01/Install-Ubuntu-System-on-Minipc/)

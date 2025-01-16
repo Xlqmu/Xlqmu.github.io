@@ -2,8 +2,8 @@
 layout:     post
 title:      "Ubuntu 中安装 oh-my-zsh"
 subtitle:   "Setup oh-my-zsh in Ubuntu"
-date:       2024-05-02 15:10:00
-author:     "陈立憨"
+date:       2025-01-16 16:15:00
+author:     "Xlqmu"
 tags:
     - Ubuntu
     - 常用软件安装
@@ -40,7 +40,7 @@ chsh -s $(which zsh)
 ```Shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
-    
+
 ### 2.2 配置插件
 
 此处介绍安装最常用的 `zsh-autosuggestions` 和 `zsh-syntax-highlighting`，实现 zsh 命令的自动补全和高亮显示效果
@@ -95,3 +95,7 @@ eval "$(register-python-argcomplete3 colcon)"
 ```Shell
 source ~/.zshrc
 ```
+
+
+
+**本文fork自** [Ubuntu 配置 Clang 编译器 - 陈立憨（派大星）的博客 | LihanChen Blog](https://lihanchen2004.github.io/2024/05/02/Setup-Clang-in-Ubuntu/)

@@ -2,8 +2,8 @@
 layout:     post
 title:      "Win11 WSL2 安装教程"
 subtitle:   "Win11 WSL2 Installation Tutorial"
-date:       2024-05-02 13:40:00
-author:     "陈立憨"
+date:       2025-01-16 16:17:00
+author:     "Xlqmu"
 tags:
     - Ubuntu
     - WSL2
@@ -42,10 +42,10 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 ## Step3 下载 Linux 内核更新包
 
 1. 下载最新包：
-
+   
     [适用于 x64 计算机的 WSL2 Linux 内核更新包](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
 
-1. 运行上一步中下载的更新包。 （双击以运行 - 系统将提示你提供提升的权限，选择“是”以批准此安装。）
+2. 运行上一步中下载的更新包。 （双击以运行 - 系统将提示你提供提升的权限，选择“是”以批准此安装。）
 
 ## Step4 将 WSL 2 设置为默认版本
 
@@ -58,23 +58,27 @@ wsl --set-default-version 2
 ## Step5 安装所选的 Linux 分发
 
 1. 打开 [Microsoft Store](https://aka.ms/wslstore)，并选择你偏好的 Linux 分发版。
-
+   
     ![image3.png](/img/in-post/About_Ubuntu/Win11-WSL2-Installation-Tutorial/image3.png)
 
-1. 首次启动新安装的 Linux 分发版时，将打开一个控制台窗口，系统会要求你等待一分钟或两分钟，以便文件解压缩并存储到电脑上。 未来的所有启动时间应不到一秒。
-
+2. 首次启动新安装的 Linux 分发版时，将打开一个控制台窗口，系统会要求你等待一分钟或两分钟，以便文件解压缩并存储到电脑上。 未来的所有启动时间应不到一秒。
+   
     ![image4.png](/img/in-post/About_Ubuntu/Win11-WSL2-Installation-Tutorial/image4.png)
 
-1. 然后，需要[为新的 Linux 分发版创建用户帐户和密码](https://learn.microsoft.com/zh-cn/windows/wsl/setup/environment#set-up-your-linux-username-and-password)。
-
-    - 此**用户名**和**密码**特定于安装的每个单独的 Linux 分发版，与 Windows 用户名无关。
-
-    - 请注意，输入**密码**时，屏幕上不会显示任何内容。 这称为**盲人键入**。 你**不会看到你正在键入的内容**，这是完全正常的。
-
-    - 创建**用户名**和**密码**后，该帐户将是分发版的默认用户，并将在启动时自动登录。
-
-    - 此帐户将被视为 Linux 管理员，能够运行 `sudo` (Super User Do) 管理命令。
-
-    - 在 WSL 上运行的每个 Linux 发行版都有其自己的 Linux 用户帐户和密码。 每当添加分发版、重新安装或重置时，都必须配置一个 Linux 用户帐户。
+3. 然后，需要[为新的 Linux 分发版创建用户帐户和密码](https://learn.microsoft.com/zh-cn/windows/wsl/setup/environment#set-up-your-linux-username-and-password)。
+   
+   - 此**用户名**和**密码**特定于安装的每个单独的 Linux 分发版，与 Windows 用户名无关。
+   
+   - 请注意，输入**密码**时，屏幕上不会显示任何内容。 这称为**盲人键入**。 你**不会看到你正在键入的内容**，这是完全正常的。
+   
+   - 创建**用户名**和**密码**后，该帐户将是分发版的默认用户，并将在启动时自动登录。
+   
+   - 此帐户将被视为 Linux 管理员，能够运行 `sudo` (Super User Do) 管理命令。
+   
+   - 在 WSL 上运行的每个 Linux 发行版都有其自己的 Linux 用户帐户和密码。 每当添加分发版、重新安装或重置时，都必须配置一个 Linux 用户帐户。
 
 **祝贺你！ 现已成功安装并设置了与 Windows 操作系统完全集成的 Linux 分发！**
+
+
+
+**本文fork自** [Win11 WSL2 安装教程 - 陈立憨（派大星）的博客 | LihanChen Blog](https://lihanchen2004.github.io/2024/05/02/Win11-WSL2-Installation-Tutorial/)
