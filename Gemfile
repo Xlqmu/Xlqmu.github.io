@@ -7,4 +7,5 @@ gem "csv"
 gem "webrick", "~> 1.7"
 gem "json", "2.9.1"
 gem "base64"
+gem 'google-protobuf', '~> 3.20'
 
