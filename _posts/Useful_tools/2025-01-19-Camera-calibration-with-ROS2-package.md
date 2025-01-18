@@ -50,7 +50,7 @@ ros2 topic hz /camera/image_raw
 ``` shell
 ros2 run camera_calibration cameracalibrator --size 7x10 --square 0.015 image:=/image_raw camera:=/camera
 ```
->一堆参数
+**一堆参数**
 ``` shell
 Camera Name:
 
