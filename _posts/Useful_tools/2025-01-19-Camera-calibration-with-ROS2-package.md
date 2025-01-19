@@ -37,7 +37,7 @@ git clone -b <ros2-distro> git@github.com:ros-perception/image_pipeline.git
 https://github.com/Aurora-UJS/rm_vision_ros2_galaxy_camera
 cd rm_vision_ros2_galaxy_camera
 colcon build --symlink-install
-ros2 launch galaxy galaxy_camera.launch.py
+ros2 launch galaxy_camera galaxy_camera.launch.py
 ```
 
 查看是否启动相机节点,确保有image_raw的topic被发布
@@ -96,7 +96,7 @@ Calibration Optimizer Options:
 
     This will open a calibration window which highlight the checkerboard.
 ```
-不断地移动标定板,是的GUI界面的几个条子都绿了,同时第一个按钮亮了的话就可以结束标定了,然后按save即可保存数据
+不断地移动标定板,使得GUI界面的几个条子都绿了,同时第一个按钮亮了的话就可以结束标定了,然后按save即可保存数据
 
 ## 参考博客
 
