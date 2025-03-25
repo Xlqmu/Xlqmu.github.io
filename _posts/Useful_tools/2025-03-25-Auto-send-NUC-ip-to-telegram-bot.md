@@ -44,7 +44,7 @@ def get_ip():
 
 # 通过 Telegram Bot 发送 IP 地址的函数
 def send_telegram(ip):
-    bot_token = "7882451310:AAGrVvO5P7WKnAKXh7TXOdYzwVnEX7bD6fo"  # 替换为新的 Bot Token
+    bot_token = "xxxxxxxx:xxxxxxxxxxxxxxxxxxx"  # 替换为新的 Bot Token
 
     # 如何获取id
 
@@ -52,7 +52,7 @@ def send_telegram(ip):
 
     # 然后从移动端发送任意信息即可看到id了
 
-    chat_id = 6789293426  # 替换为实际获得的 chat_id
+    chat_id = xxxxxxxxxx  # 替换为实际获得的 chat_id
     message_text = f"Your NUC's current IP address is: {ip}"
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
 
