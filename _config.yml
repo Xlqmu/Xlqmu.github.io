@@ -4,7 +4,7 @@ SEOTitle: Xlqmu（的博客 | Xlqmu Blog
 header-img: img/home-bg.jpg
 email: Xlqmu@qq.com
 description: "这里是 @Xlqmu 的个人博客，与你一起发现更大的世界 | 就一破 RMer"
-keyword: "Xlqmu, Robomaster, 博客, 个人网站, 哨兵, 导航, 决策, Naviation2, BehaviorTree, "
+keyword: "Xlqmu, Robomaster, 博客, 个人网站, 哨兵, 导航, 决策, Naviation2, BehaviorTree, Rust "
 url: "https://Xlqmu.github.io" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
